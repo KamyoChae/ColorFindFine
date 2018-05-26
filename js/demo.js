@@ -25,12 +25,13 @@ var p = document.getElementsByTagName('p')[0]
 btnDiv.addEventListener('click', load, false)
 btnDiv.addEventListener('click', init, false)
 oUl.addEventListener('click', pick, false)
-back[0].addEventListener('click', getBack, false) // 游戏接线 返回主页按钮
+back[0].addEventListener('click', getBack, false) // 游戏界面 返回主页按钮
 back[1].addEventListener('click', getBack, false) // 游戏失败界面 返回主页按钮
+back[2].addEventListener('click', getBack, false) // 游戏成功 返回主页按钮
 next.addEventListener('click', nextlevel, false)
 
 // 计时器
-var add = 120;
+var add = 360;
 function callTime() {
 
     this.timer = setInterval(function () {
@@ -49,6 +50,7 @@ function nextlevel() {
     clearInterval(timer);
     init();
     levels++;
+    add = 360;
     level.innerHTML = levels;
     setTime.innerHTML = 0;
     console.log('55555555555555')
@@ -117,8 +119,8 @@ function pick(e) {
     clearInterval(timer);
     flag = true;
     switch (event.target.innerHTML) {
-        case '简单': add = 120; easy(); break;
-        case '中等': add = 180; middle(); break;
+        case '简单': add = 360; easy(); break;
+        case '中等': add = 360; middle(); break;
         case '困难': add = 360; hard(); break;
     }
 }
