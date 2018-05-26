@@ -108,6 +108,7 @@ function getBack() {
     topDiv.style.display = 'none';
     gameWin.style.display = 'none';
     p.style.display = 'block';
+    overBack.style.display = 'none';
 }
 
 function pick(e) {
