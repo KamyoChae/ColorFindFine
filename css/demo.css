@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+}
+
+body {
+    background: #262f2c;
+}
+.container{
+    position: relative;
+    height: 500px;
+}
+.btn-div, .reset, .checkTo, .time , .cont, .level{
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 4px;
+    
+    text-shadow: 0 1px 2px rgb(95, 86, 86);
+}
+.checkfo{
+    
+    width: 80px;
+    margin: auto;
+}
+.btn-div, .reset, .checkTo{
+    background: #ffde1a;
+}
+.checkTo{
+    cursor: pointer;
+}
+.time{
+    box-sizing: border-box;
+    border: 1px solid #ffb91a;
+}
+.time span{
+    margin-right: 5px;
+}
+.btn-div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: -25px;
+    margin-left: -95px;
+    border-bottom: 8px solid #ffb91a;
+    border-top: 8px solid #ffb91a;
+    font-size: 20px;
+   
+}
+p{
+    position: absolute;
+    width: 350px;
+    text-align: center;
+    left: 50%;
+    top: 80%;
+    line-height: 30px;
+    margin-left: -175px;
+    font-size: 12pt;
+    color: rgb(148, 130, 130);
+    
+}
+.box-div {
+    margin: 0 auto;
+    width: 1000px;
+    display: none;
+}
+
+.con {
+
+    box-sizing: border-box;
+    background: red;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid #333;
+
+}
+
+.title-span {
+    color: #fff;
+    display: block;
+    width: 500px;
+    height: 100px;
+    font-size: 50px;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.top-div {
+    position: relative;
+    width: 960px;
+    margin: 30px auto 50px;
+    text-align: center;
+    display: none;
+    
+}
+.resetdiv, .timediv, .checkdiv, .cont-div, .level-div{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    line-height: 30px;
+}
+.cont-div{
+    position: absolute;
+    left: 50px;
+}
+.level-div{
+    position: absolute;
+    right: 50px;
+}
+.checkUl{
+    position: absolute;
+}
+
+.checkUl{
+    background: #ffde1a;
+    right: 10px;
+    margin: auto;
+    width: 145px;
+    padding: 5px 0;
+    display: none;
+}
+.checkUl li{
+    cursor: pointer;
+   width: 130px;
+   height: 30px;
+   line-height: 30px;
+   margin: 2px auto;
+}
+.checkUl li, .checkUl{
+    border-radius: 4px;
+}
+.checkUl li:hover{
+    background: #ffb91a;
+}
+.checkfo:hover .checkUl{
+    display: block;
+}
+
+.game-win, .game-over{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin: -100px -175px;
+    width: 350px;
+    height: 200px;
+    background-size:contain;
+}
+
+.game-over{
+    
+    background-image: url('../images/gameOver.jpg');
+
+}
+
+.game-win{
+    background-image: url('../images/gameWin.jpg');
+}
+.overBack, .gameWin{
+    position: absolute;
+    z-index: 999;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    display: none;
+}
+.button-div{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin: 110px -175px;
+    width: 350px;
+    height: 30px;
+    text-align: center;
+}
+.back{
+    margin-right: 20px;
+}
