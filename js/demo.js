@@ -100,8 +100,8 @@ function getBack() {
     level.innerHTML = 1;
     levels = 1;
     conts = 0;
-    setTime.innerHTML = 120;
-    add = 120;
+    setTime.innerHTML = 360;
+    add = 360;
     clearInterval(timer)
     boxDiv.innerHtml = '';
     boxDiv.style.display = 'none';
