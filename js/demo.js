@@ -112,7 +112,7 @@ function getBack() {
 
 function pick(e) {
     var event = e || window.event;
-    
+    cont.innerHTML = 0;
     clearInterval(timer);
     flag = true;
     switch (event.target.innerHTML) {
