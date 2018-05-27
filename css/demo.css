@@ -199,57 +199,45 @@ p{
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 359px){ 
+@media screen and ( min-width: 212px){ 
     html{ 
         font-size: 12.8px; 
     } 
+    .con {
+        box-sizing: border-box;
+        float: left;
+        width: 2.8rem;
+        height: 2.8rem;
+        margin: 5px;
+        border-radius: .3rem;
+        border: 1px solid #333;
+    }
 } 
 
-@media screen and (min-width: 360px) and (max-width: 374px){ 
+@media screen and ( min-width: 319px){
     html{ 
         font-size: 14.4px; 
     } 
     .time{
         margin: 0 1.2rem;
     }
-
+    .con {
+        box-sizing: border-box;
+        float: left;
+        width: 2.8rem;
+        height: 2.8rem;
+        margin: 5px;
+        border-radius: .3rem;
+        border: 1px solid #333;
+    }
 } 
 
-@media screen and (min-width: 375px) and (max-width: 385px){ 
+@media screen and ( min-width: 359px){
     html{ 
     font-size: 15px; 
     } 
     .time{
         margin: 0 1.5rem;
-    }
-
-} 
-
-@media screen and (min-width: 386px) and (max-width: 399px) { 
-    html { 
-        font-size: 15.44px; 
-    } 
-    .time{
-        margin: 0 2rem;
-    }
-
-} 
-
-@media screen and (min-width: 400px) and (max-width: 480px){ 
-    html{ 
-        font-size: 16.48px; 
-    } 
-    .time{
-        margin: 0 2.5rem;
-    }
-
-} 
-@media screen and (min-width: 481px) and (max-width: 799px){ 
-    html{ 
-        font-size: 17px; 
-    } 
-    .time{
-        margin: 0 2rem;
     }
     .con {
         box-sizing: border-box;
@@ -262,6 +250,61 @@ p{
     }
 
 } 
+
+@media screen and ( min-width: 383px){
+    html { 
+        font-size: 15.44px; 
+    } 
+    .time{
+        margin: 0 2rem;
+    }
+    .con {
+
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+} 
+
+@media screen and ( min-width: 399px){}
+
+@media screen and ( min-width: 414px){
+    /*414px显示屏样式 苹果6plus*/
+    html{ 
+        font-size: 16.48px; 
+    } 
+    .time{
+        margin: 0 2.5rem;
+    }
+}
+@media screen and ( min-width: 423px){
+    /*424px显示屏样式 LG 4X */
+}
+@media screen and ( min-width: 479px){
+    /*480px显示屏样式 索尼MT27i Xperia sola*/
+    html{ 
+        font-size: 17px; 
+    } 
+    .time{
+        margin: 0 2rem;
+    }
+    .con {
+
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+@media screen and ( min-width: 539px){
+    /*640px显示屏样式 摩托罗拉Droid3/4/Razr Atrix 4g*/
+}
+@media screen and ( min-width: 639px){
+    /*640px显示屏样式*/
+}
+@media screen and ( min-width: 640px){
+    /*640px以上显示屏样式*/
+}
+
+
 @media screen and (min-width: 800px) and (max-width: 960px){ 
     html{ 
         font-size: 20px; 
@@ -270,13 +313,8 @@ p{
         margin: 0 2rem;
     }
     .con {
-        box-sizing: border-box;
-        float: left;
         width: 2rem;
         height: 2rem;
-        margin: 5px;
-        border-radius: .3rem;
-        border: 1px solid #333;
     }
 } 
 @media screen and (min-width: 961px){ 
@@ -287,12 +325,7 @@ p{
         margin: 0 3rem;
     }
     .con {
-        box-sizing: border-box;
-        float: left;
         width: 2.5rem;
         height: 2.5rem;
-        margin: 5px;
-        border-radius: .3rem;
-        border: 1px solid #333;
     }
 } 
