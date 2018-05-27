@@ -19,7 +19,7 @@ var overBack = document.getElementsByClassName('overBack')[0] // 获取游戏结
 var gameWin = document.getElementsByClassName('gameWin')[0] // 获取游戏胜利遮罩层
 var cont = document.getElementsByClassName('cont')[0] // 获取得分
 var level = document.getElementsByClassName('level')[0] // 获取关卡
-var next = document.getElementsByClassName('next')[0] // 获取 下一关 按钮
+var next = document.getElementsByClassName('next')[1] // 获取 下一关 按钮
 var p = document.getElementsByTagName('p')[0]
 
 btnDiv.addEventListener('click', load, false)
@@ -31,7 +31,7 @@ back[2].addEventListener('click', getBack, false)
 next.addEventListener('click', nextlevel, false)
 
 // 计时器
-var add = 360;
+var add = 2;
 function callTime() {
 
     this.timer = setInterval(function () {
@@ -60,13 +60,26 @@ function nextlevel() {
 function gameOver() {
 
     // 游戏结束 弹出遮罩
+    
+    clearInterval(timer)
+    overBack.style.height = window.innerHeight + 'px';
     overBack.style.display = 'block';
+    document.onmousewheel = function(){
+        return false;
+    } 
+    document.addEventListener('touchmove', function(event) {
+        event.preventDefault();
+        }, false);
 }
 function gameWins() {
 
     // 游戏胜利 弹出遮罩
     clearInterval(timer)
+    gameWin.style.height = window.innerHeight + 'px';
     gameWin.style.display = 'block';
+    document.onmousewheel = function(){
+        return false;
+    } 
 }
 
 function addcont() {
@@ -83,13 +96,13 @@ function delcont() {
 }
 
 function load() {
-
+    
     boxDiv.style.display = 'block';
     btnDiv.style.display = 'none';
     sTitle.style.display = 'none';
     topDiv.style.display = 'block';
     p.style.display = 'none';
-
+    
 }
 function getBack() {
 
@@ -127,6 +140,7 @@ function pick(e) {
 
 function easy() {
     // 简单模式
+    clearInterval(timer);
     rows = 10;
     cols = 10;
     setTime.innerHTML = add;
@@ -134,6 +148,7 @@ function easy() {
 }
 function middle() {
     // 中等模式
+    clearInterval(timer);
     rows = 14;
     cols = 14;
     setTime.innerHTML = add;
@@ -141,6 +156,7 @@ function middle() {
 }
 function hard() {
     // 困难模式
+    clearInterval(timer);
     rows = 18;
     cols = 18;
     setTime.innerHTML = add;
@@ -155,7 +171,7 @@ function init() {
      * 第三步 循环读取前面的格子 随机生成一个数 这个数绑定div 把格子里面的颜色赋给随机格子
      *
      */
-
+    
     callTime();
 
     var count = 0;
