@@ -9,6 +9,7 @@ var mark = null; // 存储第一次点击的id
 var key = true; // 开关
 
 var btnDiv = document.getElementById('btn-div') // 开始按钮
+var starDiv = document.getElementsByClassName('star-div')[0] // 开始按钮的遮罩
 var boxDiv = document.getElementById('box-div') // 生成格子的div
 var sTitle = document.getElementsByClassName('title-span')[0] // 首页游戏字体
 var topDiv = document.getElementsByClassName('top-div')[0] // 游戏界面顶部
@@ -25,13 +26,13 @@ var p = document.getElementsByTagName('p')[0]
 btnDiv.addEventListener('click', load, false)
 btnDiv.addEventListener('click', init, false)
 oUl.addEventListener('click', pick, false)
-back[0].addEventListener('click', getBack, false) // 游戏接线 返回主页按钮
+back[0].addEventListener('click', getBack, false) // 游戏界面 返回主页按钮
 back[1].addEventListener('click', getBack, false) // 游戏失败界面 返回主页按钮
 back[2].addEventListener('click', getBack, false) 
 next.addEventListener('click', nextlevel, false)
 
 // 计时器
-var add = 2;
+var add = 360;
 function callTime() {
 
     this.timer = setInterval(function () {
@@ -52,9 +53,7 @@ function nextlevel() {
     levels++;
     add = 360;
     level.innerHTML = levels;
-    setTime.innerHTML = 0;
-    console.log('55555555555555')
-    console.log(level.innerHTML)
+    setTime.innerHTML = add;
 }
 
 function gameOver() {
@@ -98,7 +97,7 @@ function delcont() {
 function load() {
     
     boxDiv.style.display = 'block';
-    btnDiv.style.display = 'none';
+    starDiv.style.display = 'none';
     sTitle.style.display = 'none';
     topDiv.style.display = 'block';
     p.style.display = 'none';
@@ -118,7 +117,7 @@ function getBack() {
     clearInterval(timer)
     boxDiv.innerHtml = '';
     boxDiv.style.display = 'none';
-    btnDiv.style.display = 'block';
+    starDiv.style.display = 'block';
     sTitle.style.display = 'block';
     topDiv.style.display = 'none';
     gameWin.style.display = 'none';
