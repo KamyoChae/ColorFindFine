@@ -6,8 +6,6 @@
     list-style-type: none;
     color: #fff;
 }
-
-
 body {
     background: #262f2c;
 }
@@ -19,11 +17,9 @@ body {
     display: inline-block;
     text-align: center;
     color: #fff;
-   
     border-radius: .4rem;
     font-size: 1.2rem;
     text-shadow: 0 1px 2px rgb(95, 86, 86);
- 
 }
 .btn-div, .reset, .checkTo, .time {
     padding: .5rem 1rem;
@@ -70,7 +66,6 @@ p{
     margin-left: -40%;
     font-size: 1rem;
     color: rgb(148, 130, 130);
-    
 }
 
 .box-div {
@@ -78,7 +73,6 @@ p{
     background: red;
     width: 80%;
     margin: 0 auto;
-  
 }
 
 .con {
@@ -168,10 +162,8 @@ p{
     background-size:contain;
 }
 
-.game-over{
-    
+.game-over{  
     background-image: url('../images/gameOver.jpg');
-
 }
 
 .game-win{
@@ -197,7 +189,6 @@ p{
 .back{
     margin-right: 20px;
 }
-
 
 @media screen and ( min-width: 212px){ 
     html{ 
@@ -259,7 +250,6 @@ p{
         margin: 0 2rem;
     }
     .con {
-
         width: 2.2rem;
         height: 2.2rem;
     }
