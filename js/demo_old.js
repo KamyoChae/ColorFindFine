@@ -29,7 +29,6 @@ back[0].addEventListener('click', getBack, false) // 游戏界面 返回主页�
 back[1].addEventListener('click', getBack, false) // 游戏失败界面 返回主页按钮
 back[2].addEventListener('click', getBack, false) // 游戏成功 返回主页按钮
 next.addEventListener('click', nextlevel, false)
-
 // 计时器
 var add = 360;
 function callTime() {
