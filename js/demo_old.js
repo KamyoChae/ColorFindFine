@@ -168,7 +168,6 @@ function init() {
         case 14: boxDiv.style.width = "960px"; break;
         case 18: boxDiv.style.width = "1440px"; break;
     }
-
     if (flag) {
         var d = document.createElement('div');
         for (var i = 0; i < rows; i++) {
@@ -184,7 +183,6 @@ function init() {
         boxDiv.innerHTML = d.innerHTML;
         addColor(mids);
     }
-
 }
 
 // 添加颜色函数
@@ -230,11 +228,8 @@ function addColor() {
             }
 
         }
-
     }
-
     flag = false;
-
 }
 
 // 绑定事件
@@ -292,12 +287,8 @@ function checking(e) {
                 } else {
                     delcont(); // 扣分函数
                 }
-
             }
-
         }
     };
     test1();
 }
-
-
